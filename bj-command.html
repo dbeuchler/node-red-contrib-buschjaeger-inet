@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('bj-command',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            radio: {value:"", type:"bj-radio"},
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name || "bj-command";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="bj-command">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+
+
+        <label for="node-input-radio"><i class="fa fa-tag"></i> Radio</label>
+        <input type="text" id="node-input-radio" placeholder="Radio">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="bj-command">
+    <p>A node that converts the message payloads into a busch jaeger command</p>
+</script>

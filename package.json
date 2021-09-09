@@ -10,7 +10,8 @@
   "license": "MIT",
   "node-red" : {
     "nodes": {
-        "lower-case": "lower-case.js"
+        "bj-command": "bj-command.js",
+        "bj-radio": "bj-radio.js"
     }
   }
 }
